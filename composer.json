@@ -1,0 +1,12 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+
+    "require": {
+        "guzzlehttp/guzzle": "^7.2",
+        "fabpot/goutte": "^4.0"
+    }
+}
