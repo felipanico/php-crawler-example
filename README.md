@@ -35,7 +35,10 @@ Or open in your browser: http://127.0.0.1:10000/
 
 ## Tests
 
+```
 docker-compose exec --user app web ./vendor/bin/phpunit --colors tests
+
+```
 
 
 ## Contributing
