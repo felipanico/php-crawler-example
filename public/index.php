@@ -3,7 +3,11 @@
 use Src\Enum;
 use Src\Request;
 
-require '../vendor/autoload.php';
+$path = dirname(__FILE__);
+
+$path = str_replace('/public', '', $path);
+
+require $path . '/vendor/autoload.php';
 
 $client = new Request();
 

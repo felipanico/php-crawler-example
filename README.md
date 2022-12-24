@@ -21,15 +21,17 @@ cd ./php-crawler-example/docker/web
 
 docker-compose build --no-cache
 
-docker-compose up
-
 cd ./php-crawler-example
+
+docker-compose up -d
 
 docker-compose exec --user app web composer install
 
+docker-compose exec --user app web php public/index.php
+
 ```
 
-Open in your browser: http://127.0.0.1:10000/
+Or open in your browser: http://127.0.0.1:10000/
 
 ## Tests
 
