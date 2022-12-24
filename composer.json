@@ -1,12 +1,14 @@
 {
     "autoload": {
         "psr-4": {
-            "Src\\": "src/"
+            "Src\\": "src/",
+            "Tests\\": "tests/"
         }
     },
 
     "require": {
         "guzzlehttp/guzzle": "^7.2",
-        "fabpot/goutte": "^4.0"
+        "fabpot/goutte": "^4.0",
+        "phpunit/phpunit": "^9.5"
     }
 }

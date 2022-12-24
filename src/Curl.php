@@ -16,7 +16,7 @@ final class Curl
         return $ch;
     }
 
-    public function post($cookie, $token, $url) : ?string
+    public function post($cookie = '', $token = '', $url = '') : ?string
     {
         $ch = $this->init($url);
         

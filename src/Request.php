@@ -50,7 +50,7 @@ final class Request
             }
         });
 
-        $cookie = $client->getCookieJar()->get('PHPSESSID')->getValue();
+        $cookie = $client->getCookieJar()->get('PHPSESSID')?->getValue();
 
         return [
             'cookie' => $cookie,

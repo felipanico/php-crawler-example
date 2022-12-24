@@ -4,8 +4,10 @@ namespace Src;
 
 final class Token
 {
-    public static function encrypt(string $token) : string
+    public static function encrypt(?string $token) : string
     {
+        $token = $token ?? '';
+        
         $replacements = [
             'a'=> 'z',
             'b'=> 'y',
